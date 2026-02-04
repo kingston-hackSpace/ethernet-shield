@@ -7,28 +7,28 @@
 <h2>Ethernet methods</h2>
 <p>The Ethernet library contains the following methods</p>
 
-<code>Ethernet.begin((uint8_t*)mac, (uint8_t*)ip);</code>
+```Ethernet.begin((uint8_t*)mac, (uint8_t*)ip);```
 <p>Initiates the ethernet object, requires byte arrays for the mac address and the ip. These can be found on the reverse of the ethernet shield.</p>
 
-<code>Ethernet.localIP()</code>
+```Ethernet.localIP()```
 <p>Returns the local ip address</p>
 
-<code>Ethernet.gatewayIP()
+```Ethernet.gatewayIP()```
 <p>Returns the gatewayIP, this is the IP address for the router.</p>
 
-<code>Ethernet.subnetMask()
+```Ethernet.subnetMask()```
 <p>Returns the subnetmask, this is to improve performance for communication over the local area network.</p>
 
-<code>Ethernet.dnsServerIP()
+```Ethernet.dnsServerIP()```
 <p>returns the DNS server IP</p>
 
-<code>EthernetServer myServer(80);
+```EthernetServer myServer(80);```
 <p>Creates the ethernet server object</p>
 
-<code>EthernetClient myClient;
+```EthernetClient myClient;```
 <p>Creates the ethernet client object that can be called on later int he script.</p>
 
-<code>myClient.print("MESSAGE HERE");</code>
+```myClient.print("MESSAGE HERE");```
 <p>Send messages via the client</p>
 
 <code>myClient.write("MESSAGE HERE");</code>
